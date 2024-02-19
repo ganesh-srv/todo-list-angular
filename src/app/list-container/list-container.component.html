@@ -1,0 +1,10 @@
+<div class ="container">
+<div class="input-fields">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+        <label>New task:</label>
+        <input type="text" name="list" [(ngModel)]="list" required />
+        <button type="submit">+</button>
+      </form>
+<app-list [lists]="allLists"></app-list>
+</div>
+</div>
